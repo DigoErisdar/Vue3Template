@@ -6,7 +6,7 @@
 
     const route = useRoute()
     const { height } = useWindowSize()
-    const MainContainer: Ref<HTMLElement> = ref(null)
+    const MainContainer = ref<HTMLElement | null>(null)
     useHasModals(MainContainer)
 </script>
 

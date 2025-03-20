@@ -1,32 +1,24 @@
 {
+  "files": [],
   "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
     {
       "path": "./tsconfig.node.json"
     },
+    {
+      "path": "./tsconfig.app.json"
+    }
   ],
   "compilerOptions": {
-    "outDir": "./dist/",
-    "noImplicitAny": true,
     "module": "ESNext",
-    "allowImportingTsExtensions": true,
+    "target": "ESNext",
+    "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "target": "ESNext",
-    "isolatedModules": true,
-    "moduleResolution": "node",
     "skipLibCheck": true,
-    "allowJs": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     }
   },
-  "include": [
-    "src",
-  ]
+  "include": ["src", "vite.config.ts"]
 }

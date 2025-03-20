@@ -14,9 +14,9 @@ export function useFormats() {
         return value ? yes : no
     }
 
-    function toNumberMinMax(value: number, min: number = null, max: number = null) {
-        if ((min || min === 0) && value < min) value = min
-        if ((max || max === 0) && value > max) value = max
+    function toNumberMinMax(value: number, min: number = 0, max: number = Infinity) {
+        if (value < min) value = min
+        if (value > max) value = max
         return value
     }
 

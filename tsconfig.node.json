@@ -4,6 +4,10 @@
   "compilerOptions": {
     "composite": true,
     "module": "ESNext",
-    "types": ["node", "vite/client", "@types/jest"]
+    "moduleResolution": "bundler",
+    "types": ["node", "vite/client"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "outDir": "dist"
   }
 }
